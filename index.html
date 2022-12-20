@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Titulo de la pagina -->
+    <title>Challenge</title>
+    <!-- Referencia a las hojas de estilo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Referencia al codigo JS -->
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <!--Contedor principal de todo el codigo-->
+    <div class="principal">
+      <!--Contedor del logo y el titulo-->
+      <div class="logo">
+        <!--Insertamos logo-->
+        <img class="logoImg" src="img/Vector.png">
+        <h1 class="tittle">Encriptador de mensaje</h1>
+      </div>
+      <!--Contedor del texto a la izquirda-->
+      <div class="izquierda">
+          <input class="text-input" type="text" name="input-texto" id="inputtexto" placeholder="Ingrese el texto aqui">
+      </div>
+      <!--Contedor del contendido a la derecha-->
+      <div class="derecha">
+        <img src="img/vector2.png" id="logo2">
+        <h1 id="texto">Ningún mensaje fue encontrado</h1>
+        <textarea id="texto2" >Ingresa el texto que desees encriptar o desenciptar.</textarea>
+        <!--Boton de copiar-->
+        <button type="button" id="copiar" onclick="copiar()">¡Copiar!</button>
+      </div>
+      <!--Botones-->
+      <div class="button">
+        <p> !Sólo letra minusculas y sin acento</p>
+        <!--Boton incriptar con codigo Js-->
+        <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+        <!--Boton Desencriptar con codigo JS-->
+        <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+       
+      </div>
+    </div>
+    <!--Referencias del autor-->
+    <footer>
+      <div class="referencias">
+        <h3>@utor Jaime Hoyos | Aurora Challenge </h3>
+
+      </div>
+    </footer>
+      
+  </body>
+</html>
